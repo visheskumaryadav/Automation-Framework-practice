@@ -16,23 +16,49 @@
 
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+
+      <!-- Other dependencies -->
+<!--      <dependency>-->
+<!--        <groupId>ch.qos.logback</groupId>-->
+<!--        <artifactId>logback-classic</artifactId>-->
+<!--        <version>1.2.3</version> &lt;!&ndash; Use the latest version &ndash;&gt;-->
+<!--      </dependency>-->
+
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.15.0</version>
+      <version>4.16.1</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
     <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.8.0</version>
-      <scope>test</scope>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-testng</artifactId>
+      <version>7.15.0</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-picocontainer</artifactId>
+      <version>7.15.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>7.15.0</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.json/json -->
     <dependency>
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
       <version>20231013</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.6.3</version>
     </dependency>
 
   </dependencies>
@@ -54,11 +80,11 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.2.2</version>
-          <configuration>
-            <suiteXmlFiles>
-              <suiteXmlFile> </suiteXmlFile>
-            </suiteXmlFiles>
-          </configuration>
+<!--          <configuration>-->
+<!--            <suiteXmlFiles>-->
+<!--              <suiteXmlFile> </suiteXmlFile>-->
+<!--            </suiteXmlFiles>-->
+<!--          </configuration>-->
         </plugin>
       </plugins>
     </pluginManagement>
